@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url("../fonts/stylesheet.css");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'Calibri', sans-serif;
+  text-align: center;
+  background: #ffffff;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text_grey {
+  color: #6D6D6D;
+}
+
+.text_small {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.wrapper {
+  margin: 50px auto;
+  background: #a2c6dd;
+  width: 800px;
+  border-radius: 20px;
+}
+
+h2 {
+  line-height: 50px;
+}
+
+.slider {
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: left 1s ease;
+  transition: left 1s ease;
+}
+
+.slider-rows {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.slider-rows span {
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+}
+
+.disabled {
+  display: none;
+}
+
+.weather-item {
+  width: 150px;
+  float: left;
+  background: transparent;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.weather-item-bar {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: inherit;
+}
+
+.weather-item-icon {
+  width: 40px;
+  margin: 0 auto;
+  background-position: 50%, 50%;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.temp_day {
+  text-transform: uppercase
+}
+
+.icon-sun {
+  background-image: url(../climacons-master/SVG/Sun.svg)
+}
+
+.icon-rain {
+  background-image: url(../climacons-master/SVG/Cloud-Rain.svg)
+}
+
+.icon-cloud {
+  background-image: url(../climacons-master/SVG/Cloud.svg)
+}
